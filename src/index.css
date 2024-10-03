@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-white py-2 px-4 rounded shadow-sm hover:shadow-md
+  }
+}
 body {
   font-family: "roboto", sans-serif;
 }

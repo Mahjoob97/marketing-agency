@@ -6,7 +6,7 @@ import { slideUp } from './utilites/animation'
 const Banner = () => {
   return (
     <>
-    <div className="container">
+    <div className="container py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
             {/* text content section */}
             <div className='space-y-8 flex flex-col justify-center items-center md:items-start 
@@ -47,7 +47,7 @@ const Banner = () => {
             {/* Banner image section */}
             <div className='flex justify-center items-center' >
                 <motion.img initial={{opacity: 0, x:100}} 
-                    animate={{opacity: 1, x: 0}} 
+                    whileInView={{opacity: 1, x: 0}} 
                     transition={{duration: 0.5, delay: 0.5}} 
                     src={BannerImg} 
                     alt='image' 
